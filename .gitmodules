@@ -1,0 +1,3 @@
+[submodule "PokemonReact"]
+	path = PokemonReact
+	url = https://github.com/joshuahT/PokemonReact.git
