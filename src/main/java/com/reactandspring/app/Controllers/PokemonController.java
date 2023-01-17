@@ -7,16 +7,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.fasterxml.jackson.databind.type.LogicalType.Map;
-
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 
-public class HelloController {
+public class PokemonController {
         @RequestMapping(value = "/hello", method=RequestMethod.GET)
         public ResponseEntity<Object> hello(){
             Map<String, String> str = new HashMap<>();
-            str.put("Message","Hello");
+            str.put("Message","Pokemon");
             return new ResponseEntity<>(str, HttpStatus.OK);
         }
 
